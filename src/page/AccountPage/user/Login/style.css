@@ -1,0 +1,18 @@
+.formInp{
+    width: 100%;
+    height: auto;
+}
+.btn-loginForm{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 80px;
+    margin: 5px 0;
+    border-radius: 30px;
+    transition: 0.5s;
+    border: none;
+}
+
+.inp {
+    width: 80%;
+}

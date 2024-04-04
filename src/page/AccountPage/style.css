@@ -1,0 +1,104 @@
+.account-page {
+    background: radial-gradient(#fff, #ffd6d6);
+    width: 100%;
+    height: 90vh;
+}
+
+.acc-img {
+    width: 50%;
+    height: 90vh;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-login-register {
+    width: 50%;
+    height: 90vh;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.form-account {
+    background: #fff;
+    width: 300px;
+    height: 400px;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.form-account span {
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+
+.form-account-btn {
+    display: inline-block;
+    margin-bottom: 85px;
+}
+
+#Indicator {
+    width: 100px;
+    border: none;
+    background: #ff523b;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(110px);
+    transition: 1s;
+}
+
+/* .loginForm {
+    background-color: white;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+} */
+
+.vcb {
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+
+
+
+.LoginForm {
+    left: -300px;
+}
+
+.RegForm {
+    left: 0;
+}
+
+
+
+.form-container{
+    background: #fff;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.bao{
+    overflow: hidden;
+}
