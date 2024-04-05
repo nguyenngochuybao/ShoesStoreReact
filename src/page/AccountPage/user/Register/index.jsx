@@ -1,6 +1,6 @@
 import './style.css'
 import { Form, Input, Button, Divider, Typography } from "antd"
-import { LockOutlined, MailOutlined } from '@ant-design/icons'
+import { LockOutlined, MailOutlined, UserOutlined } from '@ant-design/icons'
 import { AiOutlineGoogle, AiFillFacebook, AiOutlineTwitter } from "react-icons/ai";
 import { useState } from 'react';
 
@@ -26,7 +26,7 @@ function Register ()
                 <Input
                     className='inp'
                     placeholder=' Nhập tên Email'
-                    prefix={ <MailOutlined /> }
+                    prefix={ <UserOutlined /> }
                 />
             </Form.Item>
             <Form.Item
@@ -39,10 +39,10 @@ function Register ()
                     message: "Mật khẩu phải có ít nhất 6 ký tự",
                 } ] }
                 name={ 'password' }>
-                <Input.Password
+                <Input
                     className='inp'
                     placeholder='Nhập mật Khẩu'
-                    prefix={ <LockOutlined /> }
+                    prefix={ <MailOutlined /> }
                 />
             </Form.Item>
             <Form.Item

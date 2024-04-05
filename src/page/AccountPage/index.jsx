@@ -1,7 +1,4 @@
 import './style.css'
-import { Form, Input, Button, Divider, Typography } from "antd"
-import { LockOutlined, MailOutlined } from '@ant-design/icons'
-import { AiOutlineGoogle, AiFillFacebook, AiOutlineTwitter } from "react-icons/ai";
 import { useState } from 'react';
 
 import Login from './user/Login';
