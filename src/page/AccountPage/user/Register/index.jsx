@@ -13,19 +13,18 @@ function Register ()
             <Form.Item
                 rules={ [ {
                     required: true,
-                    message: "vui lòng nhập lại Email"
-                }
-                    ,
+                    message: "Vui lòng nhập tên người dùng"
+                },
                 {
-                    type: 'email',
-                    message: "vui lòng nhập đúng Email"
-                } ] }
-
-                name={ "email" }
+                    min: 6,
+                    message: "Tên người dùng phải có ít nhất 6 ký tự",
+                },
+                ] }
+                name={ "user" }
             >
                 <Input
                     className='inp'
-                    placeholder=' Nhập tên Email'
+                    placeholder=' Nhập tên người dùng'
                     prefix={ <UserOutlined /> }
                 />
             </Form.Item>
