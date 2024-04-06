@@ -20,7 +20,7 @@ function Register ()
                     message: "Tên người dùng phải có ít nhất 6 ký tự",
                 },
                 ] }
-                name={ "user" }
+                name={ "name" }
             >
                 <Input
                     className='inp'
@@ -37,7 +37,7 @@ function Register ()
                     min: 6,
                     message: "Mật khẩu phải có ít nhất 6 ký tự",
                 } ] }
-                name={ 'password' }>
+                name={ 'user' }>
                 <Input
                     className='inp'
                     placeholder='Nhập mật Khẩu'
@@ -69,7 +69,7 @@ function Register ()
                     min: 6,
                     message: "Mật khẩu phải có ít nhất 6 ký tự",
                 } ] }
-                name={ 'password' }>
+                name={ 'comfirm' }>
                 <Input.Password
                     className='inp'
                     placeholder='Nhập mật Khẩu'
