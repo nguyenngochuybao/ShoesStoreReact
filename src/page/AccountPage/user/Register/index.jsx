@@ -37,7 +37,7 @@ function Register ()
                     min: 6,
                     message: "Mật khẩu phải có ít nhất 6 ký tự",
                 } ] }
-                name={ 'user' }>
+                name={ 'email' }>
                 <Input
                     className='inp'
                     placeholder='Nhập mật Khẩu'
