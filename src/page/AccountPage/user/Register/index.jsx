@@ -31,7 +31,7 @@ function Register ()
             <Form.Item
                 rules={ [ {
                     required: true,
-                    message: "vui lòng nhập lại mật khẩu"
+                    message: "vui lòng nhập lại email"
                 },
                 {
                     min: 6,
