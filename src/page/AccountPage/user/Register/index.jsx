@@ -20,7 +20,7 @@ function Register ()
                     message: "Tên người dùng phải có ít nhất 6 ký tự",
                 },
                 ] }
-                name={ "name" }
+                name={ "user" }
             >
                 <Input
                     className='inp'
@@ -31,11 +31,11 @@ function Register ()
             <Form.Item
                 rules={ [ {
                     required: true,
-                    message: "vui lòng nhập lại email"
+                    message: "vui lòng nhập Email"
                 },
                 {
-                    min: 6,
-                    message: "Mật khẩu phải có ít nhất 6 ký tự",
+                    type: "email",
+                    message: "vui lòng nhập đúng Email",
                 } ] }
                 name={ 'email' }>
                 <Input
@@ -65,10 +65,20 @@ function Register ()
                     required: true,
                     message: "vui lòng nhập lại mật khẩu"
                 },
-                {
-                    min: 6,
-                    message: "Mật khẩu phải có ít nhất 6 ký tự",
-                } ] }
+                ( { getFieldValue } ) => ( {
+                    validator ( _, value )
+                    {
+                        if ( !value || getFieldValue( "password" ) === value )
+                        {
+                            return Promise.resolve()
+                        }
+                        return Promise.reject(
+                            new Error( "Mật khẩu bạn vừa nhập không trùng khớp!" )
+                        );
+                    }
+                    } )
+                ] }
+                hasFeedback
                 name={ 'comfirm' }>
                 <Input.Password
                     className='inp'
